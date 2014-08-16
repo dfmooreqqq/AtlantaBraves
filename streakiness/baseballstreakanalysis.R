@@ -3,6 +3,7 @@ year<-2009
 for(i in 1:length(yearlist)){
 year <- yearlist[i]
 yearstr <- as.character(year)
+#CSV files from here - http://www.baseball-reference.com/teams/ATL/2009-schedule-scores.shtml
 filestr<- paste("teams_ATL_", yearstr,"-schedule-scores_team_schedule.csv", sep="")
 
 teamschedule<-read.csv(filestr)
