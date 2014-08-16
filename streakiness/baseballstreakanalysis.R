@@ -1,22 +1,47 @@
-yearlist<-c(2010:2013)
-year<-2009
+yearlist<-c(2009:2013)
+
+fullteamschedule<-data.frame(X.2=as.integer(character()),
+                             Rk=as.integer(character()),
+                             Gm.=as.factor(character()),
+                             Date=as.factor(character()),
+                             X=as.factor(character()),
+                             Tm=as.factor(character()),
+                             X.1=as.factor(character()),
+                             Opp=as.factor(character()),
+                             W.L=as.factor(character()),
+                             R=as.integer(character()),
+                             RA=as.integer(character()),
+                             Inn=as.integer(character()),
+                             W.L.1=as.factor(character()),
+                             Rank=integer(character()),
+                             GB=as.factor(character()),
+                             Win=as.factor(character()),
+                             Loss=as.factor(character()),
+                             Save=as.factor(character()),
+                             Time=as.factor(character()),
+                             D.N=as.factor(character()),
+                             Attendance=as.integer(character()),
+                             Streak=as.factor(character()),
+                             WinorLoss=as.factor(character()),
+                             Year=as.integer(character())
+                             )
+
 for(i in 1:length(yearlist)){
-year <- yearlist[i]
-yearstr <- as.character(year)
-#CSV files from here - http://www.baseball-reference.com/teams/ATL/2009-schedule-scores.shtml
-filestr<- paste("teams_ATL_", yearstr,"-schedule-scores_team_schedule.csv", sep="")
+    year <- yearlist[i]
+    yearstr <- as.character(year)
+    #CSV files from here - http://www.baseball-reference.com/teams/ATL/2009-schedule-scores.shtml
+    filestr<- paste("teams_ATL_", yearstr,"-schedule-scores_team_schedule.csv", sep="")
 
-teamschedule<-read.csv(filestr)
+    teamschedule<-read.csv(filestr)
 
-teamschedule<-teamschedule[teamschedule$Streak!="Streak",]
-write.csv(teamschedule, "teamschedule.csv")
-teamschedule<-read.csv("teamschedule.csv")
-teamschedule$WinorLoss <- as.factor(substr(teamschedule$W.L,1,1))
-teamschedule$WinorLoss <- factor(teamschedule$WinorLoss, levels(teamschedule$WinorLoss)[c(2,1)])
-teamschedule$Year <- year
+    teamschedule<-teamschedule[teamschedule$Streak!="Streak",]
+    write.csv(teamschedule, "teamschedule.csv")
+    teamschedule<-read.csv("teamschedule.csv")
+    teamschedule$WinorLoss <- as.factor(substr(teamschedule$W.L,1,1))
+    teamschedule$WinorLoss <- factor(teamschedule$WinorLoss, levels(teamschedule$WinorLoss)[c(2,1)])
+    teamschedule$Year <- year
 
-fullteamschedule<-rbind(fullteamschedule, teamschedule)
-
+    fullteamschedule<-rbind(fullteamschedule, teamschedule)
 }
 
 ## First - define new streak if Loss changes to Win or vice versa
