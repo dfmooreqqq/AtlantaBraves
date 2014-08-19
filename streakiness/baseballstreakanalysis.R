@@ -67,4 +67,3 @@ Wquantiles<-quantile(summarybystreak$NGames[summarybystreak$WinorLoss=="W"])
 Lquantiles<-quantile(summarybystreak$NGames[summarybystreak$WinorLoss=="L"])
 xyplot(NGames ~ StreakNo, data=summarybystreak, groups=WinorLoss)
 NumStreaksGreaterthan4<-sum(summarybystreak$NGames>4)
-}
