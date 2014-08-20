@@ -1,0 +1,168 @@
+
+Rk,Gm#,Date,,Tm,,Opp,W/L,R,RA,Inn,W-L,Rank,GB,Win,Loss,Save,Time,D/N,Attendance,Streak
+1,1,Monday Apr 2,boxscore,ATL,@,PHI,W,5,3,10,1-0,1,Tied,Wickman,Madson,Paronto,2:57,D,44742,+
+2,2,Wednesday Apr 4,boxscore,ATL,@,PHI,W,3,2,11,2-0,2,0.5,McBride,Madson,Wickman,3:16,N,41516,++
+3,3,Thursday Apr 5,boxscore,ATL,@,PHI,W,8,4,,3-0,1,Tied,James,Eaton,Soriano,3:10,D,30062,+++
+4,4,Friday Apr 6,boxscore,ATL,,NYM,L,1,11,,3-1,2,1.0,Perez,Redman,,2:59,N,51014,-
+5,5,Saturday Apr 7,boxscore,ATL,,NYM,W,5,3,,4-1,1,Tied,Smoltz,Glavine,Wickman,3:13,D,43156,+
+6,6,Sunday Apr 8,boxscore,ATL,,NYM,W,3,2,,5-1,1,up 1.0,Soriano,Heilman,Wickman,2:59,D,24832,++
+7,7,Tuesday Apr 10,boxscore,ATL,,WSN,W,8,0,,6-1,1,up 1.0,Hudson,Chico,,2:52,N,18396,+++
+8,8,Wednesday Apr 11,boxscore,ATL,,WSN,W,8,3,,7-1,1,up 2.0,James,Williams,,2:47,N,15631,++++
+9,9,Thursday Apr 12,boxscore,ATL,,WSN,L,0,2,,7-2,1,up 1.0,Colome,Smoltz,Cordero,2:42,N,23897,-
+10,10,Friday Apr 13,boxscore,ATL,,FLA,L,4,11,,7-3,1,Tied,Willis,Redman,,2:52,N,33212,--
+11,11,Sunday Apr 15,boxscore,ATL,,FLA,W,8,4,,8-3,1,up 1.0,Hudson,Olsen,,2:57,D,25189,+
+12,12,Monday Apr 16,boxscore,ATL,@,WSN,L,1,5,,8-4,1,up 0.5,Chico,James,,2:35,N,16316,-
+13,13,Tuesday Apr 17,boxscore,ATL,@,WSN,W,6,4,,9-4,1,up 0.5,Smoltz,Williams,Wickman,3:10,N,17791,+
+14,14,Wednesday Apr 18,boxscore,ATL,,CHC,W,8,6,,10-4,1,up 0.5,Villarreal,Eyre,Wickman,3:09,N,26837,++
+15,15,Thursday Apr 19,boxscore,ATL,,CHC,L,0,3,,10-5,2,0.5,Hill,Redman,Dempster,2:27,N,31603,-
+16,16,Friday Apr 20,boxscore,ATL,@,NYM,W,7,3,,11-5,1,up 0.5,Hudson,Pelfrey,,2:55,N,47547,+
+17,17,Saturday Apr 21,boxscore,ATL,@,NYM,L,2,7,,11-6,2,0.5,Perez,James,,2:48,D,55143,-
+18,18,Sunday Apr 22,boxscore,ATL,@,NYM,W,9,6,,12-6,1,up 0.5,Yates,Heilman,Wickman,3:21,D,55671,+
+19,19,Monday Apr 23,boxscore,ATL,@,FLA,L,7,8,,12-7,2,0.5,Willis,Davies,Pinto,2:48,N,13227,-
+20,20,Tuesday Apr 24,boxscore,ATL,@,FLA,W,11,6,,13-7,2,0.5,Moylan,Lindstrom,,3:09,N,11507,+
+21,21,Wednesday Apr 25,boxscore,ATL,@,FLA,L-wo,3,4,,13-8,2,0.5,Owens,Wickman,,2:23,N,13310,-
+22,22,Friday Apr 27,boxscore,ATL,@,COL,W,9,7,,14-8,1,up 0.5,James,Francis,Moylan,3:09,N,25079,+
+23,23,Saturday Apr 28,boxscore,ATL,@,COL,W,6,2,,15-8,1,up 0.5,Smoltz,Hirsh,,2:29,N,28178,++
+24,24,Sunday Apr 29,boxscore,ATL,@,COL,L-wo,7,9,11,15-9,2,0.5,Bautista,Colyer,,3:40,D,31445,-
+25,25,Monday Apr 30,boxscore,ATL,,PHI,W-wo,5,2,,16-9,1,up 0.5,Gonzalez,Alfonseca,,2:24,N,20354,+
+26,26,Tuesday May 1,boxscore,ATL,,PHI,L,4,6,,16-10,1,up 0.5,Hamels,Redman,Gordon,3:18,N,19670,-
+27,27,Wednesday May 2,boxscore,ATL,,PHI,W,4,3,,17-10,1,up 0.5,Paronto,Garcia,Soriano,2:49,N,23647,+
+28,28,Friday May 4,boxscore,ATL,,LAD,W,4,0,,18-10,1,Tied,Smoltz,Tomko,,2:39,N,38263,++
+29,29,Saturday May 5,boxscore,ATL,,LAD,L,3,6,,18-11,2,1.0,Lowe,Hudson,Saito,2:51,N,42786,-
+30,30,Sunday May 6,boxscore,ATL,,LAD,W,6,4,,19-11,1,Tied,Paronto,Tsao,Gonzalez,2:57,D,35350,+
+31,31,Monday May 7,boxscore,ATL,,SDP,L,2,4,,19-12,1,Tied,Young,James,Hoffman,3:00,N,19189,-
+32,32,Tuesday May 8,boxscore,ATL,,SDP,W,3,2,,20-12,1,Tied,Gonzalez,Bell,Soriano,2:13,N,21748,+
+33,33,Wednesday May 9,boxscore,ATL,,SDP,W,3,2,,21-12,1,Tied,Smoltz,Meredith,Soriano,2:13,N,36523,++
+34,34,Thursday May 10,boxscore,ATL,,SDP,W,5,3,,22-12,1,up 0.5,Hudson,Wells,Soriano,2:39,D,28799,+++
+35,35,Friday May 11,boxscore,ATL,@,PIT,W,4,1,,23-12,1,up 0.5,Davies,Duke,Gonzalez,2:35,N,23376,++++
+36,36,Saturday May 12,boxscore,ATL,@,PIT,W,9,2,,24-12,1,up 1.5,James,Armas,,2:19,N,34775,+++++
+37,37,Sunday May 13,boxscore,ATL,@,PIT,L,2,13,,24-13,1,up 0.5,Snell,Lerew,,2:45,D,19484,-
+38,38,Monday May 14,boxscore,ATL,@,WSN,L,1,2,,24-14,2,0.5,Bergmann,Smoltz,Colome,2:08,N,18829,--
+39,39,Tuesday May 15,boxscore,ATL,@,WSN,W,6,2,,25-14,1,up 0.5,Hudson,Williams,,2:40,N,21258,+
+40,40,Wednesday May 16,boxscore,ATL,@,WSN,L,4,6,,25-15,2,0.5,Traber,Davies,Rauch,2:29,N,20329,-
+41,41,Thursday May 17,boxscore,ATL,@,WSN,L,3,4,,25-16,2,1.5,Chico,Paronto,Rauch,2:36,D,24631,--
+42,42,Saturday May 19 (1),boxscore,ATL,@,BOS,L,3,13,,25-17,2,2.5,Matsuzaka,Lerew,,3:02,D,36358,---
+43,43,Saturday May 19 (2),boxscore,ATL,@,BOS,W,14,0,,26-17,2,2.5,Smoltz,Hansack,,3:01,N,36792,+
+44,44,Sunday May 20,boxscore,ATL,@,BOS,L,3,6,,26-18,2,2.5,Gabbard,Hudson,,3:05,D,36140,-
+45,45,Tuesday May 22,boxscore,ATL,,NYM,W,8,1,,27-18,2,1.5,Davies,Sosa,,2:29,N,32587,+
+46,46,Wednesday May 23,boxscore,ATL,,NYM,L,0,3,,27-19,2,2.5,Perez,James,Wagner,2:49,N,30489,-
+47,47,Thursday May 24,boxscore,ATL,,NYM,W,2,1,,28-19,2,1.5,Smoltz,Glavine,Wickman,2:33,N,36660,+
+48,48,Friday May 25,boxscore,ATL,,PHI,L,3,8,,28-20,2,2.5,Moyer,Hudson,,2:58,N,35402,-
+49,49,Saturday May 26,boxscore,ATL,,PHI,L,4,6,,28-21,2,3.5,Eaton,Carlyle,Alfonseca,2:51,D,40122,--
+50,50,Sunday May 27,boxscore,ATL,,PHI,L,6,13,,28-22,2,4.5,Hamels,Davies,,3:05,D,38058,---
+Rk,Gm#,Date,,Tm,,Opp,W/L,R,RA,Inn,W-L,Rank,GB,Win,Loss,Save,Time,D/N,Attendance,Streak
+51,51,Monday May 28,boxscore,ATL,@,MIL,W,2,1,,29-22,2,4.0,James,Capuano,Wickman,2:37,D,41139,+
+52,52,Tuesday May 29,boxscore,ATL,@,MIL,L,4,5,,29-23,2,5.0,Sheets,Moylan,Cordero,3:01,N,27559,-
+53,53,Wednesday May 30,boxscore,ATL,@,MIL,W,9,3,,30-23,2,4.0,Hudson,Turnbow,,2:44,D,32758,+
+54,54,Friday Jun 1,boxscore,ATL,@,CHC,W,8,5,,31-23,2,3.5,Davies,Zambrano,,2:58,D,39523,++
+55,55,Saturday Jun 2,boxscore,ATL,@,CHC,W,5,3,,32-23,2,3.5,Yates,Ohman,Wickman,2:40,D,40290,+++
+56,56,Sunday Jun 3,boxscore,ATL,@,CHC,L,1,10,,32-24,2,3.5,Marshall,Cormier,,2:36,D,40155,-
+57,57,Monday Jun 4,boxscore,ATL,,FLA,L,4,6,,32-25,2,4.0,Obermueller,Hudson,Gregg,2:44,N,22175,--
+58,58,Tuesday Jun 5 (1),boxscore,ATL,,FLA,W,3,1,,33-25,2,3.5,Carlyle,Pinto,Wickman,2:20,D,20863,+
+59,59,Tuesday Jun 5 (2),boxscore,ATL,,FLA,L,1,5,,33-26,2,3.5,van den Hurk,Smoltz,,2:27,N,27072,-
+60,60,Wednesday Jun 6,boxscore,ATL,,FLA,L,4,7,,33-27,2,3.5,Miller,Davies,Gregg,3:10,D,28026,--
+61,61,Thursday Jun 7,boxscore,ATL,,CHC,L,1,2,,33-28,2,3.5,Hill,James,Dempster,2:14,N,32902,---
+62,62,Friday Jun 8,boxscore,ATL,,CHC,L,1,9,,33-29,2,4.5,Marshall,Cormier,,2:58,N,37123,----
+63,63,Saturday Jun 9,boxscore,ATL,,CHC,W,9,5,,34-29,2,3.5,Moylan,Marquis,,3:09,N,51816,+
+64,64,Sunday Jun 10,boxscore,ATL,,CHC,W,5,4,,35-29,2,2.5,Paronto,Dempster,Wickman,3:05,N,32752,++
+65,65,Tuesday Jun 12,boxscore,ATL,@,MIN,L,3,7,,35-30,2,2.0,Slowey,Davies,,2:39,N,25868,-
+66,66,Wednesday Jun 13,boxscore,ATL,@,MIN,L,0,6,,35-31,2,2.0,Silva,James,,2:10,N,27903,--
+67,67,Thursday Jun 14,boxscore,ATL,@,MIN,L-wo,2,3,,35-32,3,2.5,Reyes,Wickman,,2:35,N,26714,---
+68,68,Friday Jun 15,boxscore,ATL,@,CLE,W,5,4,,36-32,2,2.5,Soriano,Sabathia,Wickman,2:58,N,34848,+
+69,69,Saturday Jun 16,boxscore,ATL,@,CLE,W,6,2,,37-32,2,1.5,Smoltz,Byrd,,2:48,D,35153,++
+70,70,Sunday Jun 17,boxscore,ATL,@,CLE,L,2,5,,37-33,2,1.5,Hernandez,Davies,Borowski,2:51,D,33429,-
+71,71,Monday Jun 18,boxscore,ATL,,BOS,W,9,4,,38-33,2,1.5,James,Schilling,,3:11,N,47562,+
+72,72,Tuesday Jun 19,boxscore,ATL,,BOS,L,0,4,,38-34,2,1.5,Beckett,Hudson,,2:57,N,47910,-
+73,73,Wednesday Jun 20,boxscore,ATL,,BOS,L,0,11,,38-35,2,1.5,Tavarez,Carlyle,,2:46,N,49585,--
+74,74,Friday Jun 22,boxscore,ATL,,DET,L,0,5,,38-36,3,2.5,Rogers,Smoltz,,2:37,N,44034,---
+75,75,Saturday Jun 23,boxscore,ATL,,DET,L,1,2,,38-37,3,3.5,Verlander,Davies,Jones,2:51,D,49074,----
+76,76,Sunday Jun 24,boxscore,ATL,,DET,L,0,5,,38-38,3,4.5,Miller,James,Durbin,2:52,N,34181,-----
+77,77,Monday Jun 25,boxscore,ATL,,WSN,W,4,1,,39-38,3,4.5,Hudson,Bergmann,Wickman,2:29,N,25375,+
+78,78,Tuesday Jun 26,boxscore,ATL,,WSN,W,6,2,,40-38,3,3.5,Carlyle,Bacsik,Wickman,2:39,N,22508,++
+79,79,Wednesday Jun 27,boxscore,ATL,,WSN,W,13,0,,41-38,2,3.5,Smoltz,Bowie,,3:08,N,29144,+++
+80,80,Friday Jun 29,boxscore,ATL,@,FLA,W,12,3,,42-38,2,4.0,James,Johnson,,3:16,N,17181,++++
+81,81,Saturday Jun 30,boxscore,ATL,@,FLA,W,6,5,,43-38,2,4.0,Hudson,Benitez,Yates,3:25,N,24229,+++++
+82,82,Sunday Jul 1,boxscore,ATL,@,FLA,L-wo,5,6,10,43-39,2,4.0,Gardner,Soriano,,3:17,D,14311,-
+83,83,Monday Jul 2,boxscore,ATL,@,LAD,L,2,8,,43-40,2,4.0,Beimel,Smoltz,,3:03,N,40571,--
+84,84,Tuesday Jul 3,boxscore,ATL,@,LAD,L,6,7,,43-41,2,4.0,Seanez,Ledezma,Saito,2:50,N,43052,---
+85,85,Wednesday Jul 4,boxscore,ATL,@,LAD,W,5,2,,44-41,2,3.0,James,Hendrickson,Wickman,3:08,N,56000,+
+86,86,Thursday Jul 5,boxscore,ATL,@,LAD,W,8,6,,45-41,2,3.0,Moylan,Stults,Wickman,3:28,N,41052,++
+87,87,Friday Jul 6,boxscore,ATL,@,SDP,W,7,4,,46-41,2,2.0,Carlyle,Germano,,2:36,N,37526,+++
+88,88,Saturday Jul 7,boxscore,ATL,@,SDP,L,5,8,,46-42,2,3.0,Bell,Yates,Hoffman,2:52,D,41419,-
+89,89,Sunday Jul 8,boxscore,ATL,@,SDP,W,5,4,,47-42,2,2.0,Davies,Maddux,,2:34,N,41026,+
+90,90,Friday Jul 13,boxscore,ATL,,PIT,W,9,1,,48-42,2,1.5,Hudson,Snell,,2:28,N,38922,++
+91,91,Saturday Jul 14,boxscore,ATL,,PIT,W-wo,5,4,,49-42,2,1.5,Wickman,Chacon,,2:54,N,44041,+++
+92,92,Sunday Jul 15,boxscore,ATL,,PIT,W,5,1,,50-42,2,1.5,Carlyle,Maholm,,2:17,D,30756,++++
+93,93,Monday Jul 16,boxscore,ATL,,CIN,L,3,10,,50-43,2,1.5,Livingston,Davies,,3:16,N,24442,-
+94,94,Tuesday Jul 17,boxscore,ATL,,CIN,L,5,6,,50-44,2,2.5,Arroyo,Reyes,Weathers,2:39,N,30072,--
+95,95,Wednesday Jul 18,boxscore,ATL,,CIN,L,4,5,15,50-45,2,2.5,Gosling,Ascanio,,4:31,D,33789,---
+96,96,Thursday Jul 19,boxscore,ATL,,STL,W,10,1,,51-45,2,2.5,Hudson,Maroth,,2:32,N,41171,+
+97,97,Friday Jul 20,boxscore,ATL,,STL,L,2,4,,51-46,2,3.5,Wainwright,Soriano,Isringhausen,2:39,N,42712,-
+98,98,Saturday Jul 21,boxscore,ATL,,STL,W,14,6,,52-46,2,2.5,Carlyle,Looper,,3:22,N,53953,+
+99,99,Sunday Jul 22,boxscore,ATL,,STL,L,2,7,10,52-47,2,3.5,Isringhausen,Yates,,3:25,N,39181,-
+100,100,Monday Jul 23,boxscore,ATL,@,SFG,W,4,2,,53-47,2,3.0,Smoltz,Cain,Wickman,2:40,N,42679,+
+Rk,Gm#,Date,,Tm,,Opp,W/L,R,RA,Inn,W-L,Rank,GB,Win,Loss,Save,Time,D/N,Attendance,Streak
+101,101,Tuesday Jul 24,boxscore,ATL,@,SFG,W,7,5,13,54-47,2,3.0,Moylan,Sanchez,Yates,4:08,N,43072,++
+102,102,Wednesday Jul 25,boxscore,ATL,@,SFG,L,1,2,,54-48,2,4.0,Lowry,James,Hennessey,2:27,N,42834,-
+103,103,Thursday Jul 26,boxscore,ATL,@,SFG,L,2,4,,54-49,2,4.0,Lincecum,Carlyle,Hennessey,2:33,D,42366,--
+104,104,Friday Jul 27,boxscore,ATL,@,ARI,L-wo,7,8,11,54-50,2,4.0,Gonzalez,Ledezma,,3:40,N,27151,---
+105,105,Saturday Jul 28,boxscore,ATL,@,ARI,L-wo,3,4,10,54-51,3,4.5,Cruz,Yates,,3:08,D,33664,----
+106,106,Sunday Jul 29,boxscore,ATL,@,ARI,W,14,0,,55-51,3,4.5,Hudson,Hernandez,,2:34,D,30535,+
+107,107,Tuesday Jul 31,boxscore,ATL,,HOU,W,12,4,,56-51,3,3.5,James,Sampson,,2:41,N,32315,++
+108,108,Wednesday Aug 1,boxscore,ATL,,HOU,W,12,3,,57-51,2,3.5,Carlyle,Rodriguez,,2:52,N,30785,+++
+109,109,Thursday Aug 2,boxscore,ATL,,HOU,L,11,12,14,57-52,3,4.5,McLemore,Villarreal,Moehler,4:59,N,35659,-
+110,110,Friday Aug 3,boxscore,ATL,,COL,L,2,9,,57-53,3,5.5,Francis,Smoltz,,2:59,N,37481,--
+111,111,Saturday Aug 4,boxscore,ATL,,COL,W,6,4,,58-53,2,4.5,Hudson,Jimenez,Wickman,3:02,N,50647,+
+112,112,Sunday Aug 5,boxscore,ATL,,COL,W-wo,6,5,10,59-53,2,4.5,Villarreal,Buchholz,,3:28,D,37089,++
+113,113,Tuesday Aug 7,boxscore,ATL,@,NYM,W,7,3,,60-53,2,3.5,Carlyle,Perez,,2:45,N,52177,+++
+114,114,Wednesday Aug 8,boxscore,ATL,@,NYM,L,3,4,,60-54,3,4.5,Heilman,Soriano,Wagner,2:48,N,51749,-
+115,115,Thursday Aug 9,boxscore,ATL,@,NYM,W,7,6,,61-54,2,3.5,Hudson,Maine,Villarreal,3:12,D,52425,+
+116,116,Friday Aug 10,boxscore,ATL,@,PHI,L,4,5,,61-55,3,3.5,Hamels,Moylan,Gordon,2:24,N,40844,-
+117,117,Saturday Aug 11,boxscore,ATL,@,PHI,W,7,5,,62-55,2,2.5,Mahay,Eaton,Wickman,2:56,N,44948,+
+118,118,Sunday Aug 12,boxscore,ATL,@,PHI,L,3,5,,62-56,3,3.5,Moyer,Carlyle,Myers,2:38,N,45053,-
+119,119,Tuesday Aug 14,boxscore,ATL,,SFG,W-wo,5,4,,63-56,3,3.5,Wickman,Kline,,3:00,N,36186,+
+120,120,Wednesday Aug 15,boxscore,ATL,,SFG,W,6,3,,64-56,2,3.5,Hudson,Ortiz,Wickman,2:45,N,33841,++
+121,121,Thursday Aug 16,boxscore,ATL,,SFG,L,3,9,,64-57,3,3.5,Lincecum,James,,2:31,N,36419,-
+122,122,Friday Aug 17,boxscore,ATL,,ARI,L,0,4,,64-58,3,4.5,Webb,Cormier,,2:17,N,33248,--
+123,123,Saturday Aug 18,boxscore,ATL,,ARI,L,6,12,,64-59,3,5.5,Owings,Carlyle,,2:41,N,48643,---
+124,124,Sunday Aug 19,boxscore,ATL,,ARI,W,6,2,,65-59,3,5.5,Smoltz,Petit,,2:53,D,30818,+
+125,125,Monday Aug 20,boxscore,ATL,@,CIN,W,14,4,,66-59,2,5.0,Hudson,Dumatrait,,2:50,N,24477,++
+126,126,Tuesday Aug 21,boxscore,ATL,@,CIN,L,7,8,,66-60,3,6.0,Bray,Moylan,Weathers,2:40,N,21039,-
+127,127,Wednesday Aug 22,boxscore,ATL,@,CIN,L,2,4,,66-61,3,6.0,Arroyo,Cormier,Weathers,2:36,N,22924,--
+128,128,Thursday Aug 23,boxscore,ATL,@,CIN,L-wo,7,9,12,66-62,3,6.0,Gosling,Wickman,,3:45,N,22052,---
+129,129,Friday Aug 24,boxscore,ATL,@,STL,W,7,2,,67-62,2,6.0,Smoltz,Wells,,2:53,N,44032,+
+130,130,Saturday Aug 25,boxscore,ATL,@,STL,L,4,5,,67-63,2,7.0,Springer,Hudson,Isringhausen,2:57,N,45441,-
+131,131,Sunday Aug 26,boxscore,ATL,@,STL,L,1,4,,67-64,3,7.0,Wainwright,Reyes,Isringhausen,2:27,D,43934,--
+132,132,Monday Aug 27,boxscore,ATL,@,FLA,W,13,2,,68-64,3,6.0,Cormier,Olsen,,2:39,N,11716,+
+133,133,Tuesday Aug 28,boxscore,ATL,@,FLA,L-wo,3,4,11,68-65,3,6.0,Kim,Villarreal,,3:12,N,11539,-
+134,134,Wednesday Aug 29,boxscore,ATL,@,FLA,W,7,4,,69-65,3,5.0,Carlyle,Willis,Soriano,2:52,N,12633,+
+135,135,Friday Aug 31,boxscore,ATL,,NYM,L,1,7,,69-66,3,5.5,Maine,Hudson,,2:32,N,45245,-
+136,136,Saturday Sep 1,boxscore,ATL,,NYM,L,1,5,,69-67,3,6.5,Pelfrey,James,Feliciano,2:29,D,45611,--
+137,137,Sunday Sep 2,boxscore,ATL,,NYM,L,2,3,,69-68,3,7.5,Glavine,Smoltz,Wagner,2:47,D,46242,---
+138,138,Monday Sep 3,boxscore,ATL,,PHI,W,5,1,,70-68,3,7.5,Cormier,Moyer,,2:51,D,31592,+
+139,139,Tuesday Sep 4,boxscore,ATL,,PHI,L,2,5,,70-69,3,8.5,Lohse,Carlyle,Myers,2:57,N,22130,-
+140,140,Wednesday Sep 5,boxscore,ATL,,PHI,W-wo,9,8,,71-69,3,7.5,Soriano,Myers,,3:46,D,22215,+
+141,141,Friday Sep 7,boxscore,ATL,,WSN,W,7,1,,72-69,3,7.5,Smoltz,Hanrahan,,2:49,N,31116,++
+142,142,Saturday Sep 8,boxscore,ATL,,WSN,W,9,2,,73-69,3,7.5,James,Chico,,2:45,N,36940,+++
+143,143,Sunday Sep 9,boxscore,ATL,,WSN,L,4,7,,73-70,3,8.5,Bergmann,Cormier,Cordero,2:59,D,31582,-
+144,144,Monday Sep 10,boxscore,ATL,@,NYM,L,2,3,,73-71,3,9.5,Perez,Hudson,Wagner,2:36,N,48557,--
+145,145,Tuesday Sep 11,boxscore,ATL,@,NYM,W,13,5,,74-71,3,8.5,Moylan,Hernandez,,3:03,N,48732,+
+146,146,Wednesday Sep 12,boxscore,ATL,@,NYM,L,3,4,,74-72,3,9.5,Mota,Acosta,Wagner,2:54,N,51648,-
+147,147,Friday Sep 14,boxscore,ATL,@,WSN,W,8,5,13,75-72,3,8.5,Ascanio,Colome,,5:13,N,18568,+
+148,148,Saturday Sep 15,boxscore,ATL,@,WSN,L,4,7,,75-73,3,8.5,Bergmann,Cormier,Cordero,2:51,N,26866,-
+149,149,Sunday Sep 16,boxscore,ATL,@,WSN,W,3,0,,76-73,3,7.5,Hudson,Hill,,2:24,D,23935,+
+150,150,Monday Sep 17,boxscore,ATL,,FLA,W,11,6,,77-73,3,6.5,Smoltz,Kim,,2:51,N,20957,++
+Rk,Gm#,Date,,Tm,,Opp,W/L,R,RA,Inn,W-L,Rank,GB,Win,Loss,Save,Time,D/N,Attendance,Streak
+151,151,Tuesday Sep 18,boxscore,ATL,,FLA,W,4,3,,78-73,3,5.5,Reyes,Seddon,Soriano,3:10,N,22076,+++
+152,152,Wednesday Sep 19,boxscore,ATL,,FLA,W,5,1,,79-73,3,5.5,James,Barone,,2:23,N,24449,++++
+153,153,Thursday Sep 20,boxscore,ATL,,MIL,W,3,1,,80-73,3,4.5,Bennett,Suppan,Soriano,2:38,N,26595,+++++
+154,154,Friday Sep 21,boxscore,ATL,,MIL,L,1,4,,80-74,3,5.5,Linebrink,Hudson,Cordero,3:02,N,34401,-
+155,155,Saturday Sep 22,boxscore,ATL,,MIL,W-wo,4,3,11,81-74,3,5.5,Devine,McClung,,3:28,D,42378,+
+156,156,Sunday Sep 23,boxscore,ATL,,MIL,W,7,4,,82-74,3,5.5,Acosta,Vargas,Soriano,3:34,D,44088,++
+157,157,Tuesday Sep 25,boxscore,ATL,@,PHI,W,10,6,,83-74,3,4.0,Bennett,Moyer,,3:09,N,39129,+++
+158,158,Wednesday Sep 26,boxscore,ATL,@,PHI,L,2,5,,83-75,3,4.0,Lohse,Hudson,Myers,2:32,N,36588,-
+159,159,Thursday Sep 27,boxscore,ATL,@,PHI,L,4,6,,83-76,3,4.0,Kendrick,Smoltz,Myers,2:34,N,40589,--
+160,160,Friday Sep 28,boxscore,ATL,@,HOU,W,7,2,,84-76,3,4.0,Reyes,Albers,,3:00,N,43011,+
+161,161,Saturday Sep 29,boxscore,ATL,@,HOU,L,2,3,,84-77,3,4.0,Backe,Bennett,Lidge,2:35,N,43624,-
+162,162,Sunday Sep 30,boxscore,ATL,@,HOU,L,0,3,,84-78,3,5.0,Paulino,Carlyle,Borkowski,2:25,D,43823,--
+Rk,Gm#,Date,,Tm,,Opp,W/L,R,RA,Inn,W-L,Rank,GB,Win,Loss,Save,Time,D/N,Attendance,Streak
