@@ -1,4 +1,4 @@
-yearlist<-c(2000:2013)
+yearlist<-c(1990:2013)
 
 fullteamschedule<-data.frame(X.2=as.integer(character()),
                              Rk=as.integer(character()),
@@ -13,7 +13,7 @@ fullteamschedule<-data.frame(X.2=as.integer(character()),
                              RA=as.integer(character()),
                              Inn=as.integer(character()),
                              W.L.1=as.factor(character()),
-                             Rank=integer(character()),
+                             Rank=as.integer(character()),
                              GB=as.factor(character()),
                              Win=as.factor(character()),
                              Loss=as.factor(character()),
@@ -40,6 +40,9 @@ for(i in 1:length(yearlist)){
     teamschedule$WinorLoss <- as.factor(substr(teamschedule$W.L,1,1))
     teamschedule$WinorLoss <- factor(teamschedule$WinorLoss, levels(teamschedule$WinorLoss)[c(2,1)])
     teamschedule$Year <- year
+    
+    #remove ties (there's one in 2002)
+    teamschedule<-teamschedule[teamschedule$WinorLoss!="T",]
 
     fullteamschedule<-rbind(fullteamschedule, teamschedule)
 }
