@@ -48,6 +48,9 @@ for(i in 1:length(yearlist)){
 }
 
 ## First - define new streak if Loss changes to Win or vice versa
+fullteamschedule<-fullteamschedule[!is.na(fullteamschedule$WinorLoss),]
+#for now, let's get rid of 2002 (giving me trouble)
+fullteamschedule<-fullteamschedule[fullteamschedule$Year!=2002,]
 fullteamschedule$StreakNo[1]<-1
 fullteamschedule$Count <- 1
 for(i in 2:length(fullteamschedule$WinorLoss)){
@@ -69,4 +72,5 @@ histogram( ~ summarybystreak$NGames | summarybystreak$Year*summarybystreak$Winor
 Wquantiles<-quantile(summarybystreak$NGames[summarybystreak$WinorLoss=="W"])
 Lquantiles<-quantile(summarybystreak$NGames[summarybystreak$WinorLoss=="L"])
 xyplot(NGames ~ StreakNo, data=summarybystreak, groups=WinorLoss)
-NumStreaksGreaterthan4<-sum(summarybystreak$NGames>4)
+NumLongStreaksWL<-ddply(summarybystreak, .(Year, WinorLoss), summarize, LongStreaks = sum(NGames>4))
+NumLongStreaks<-ddply(summarybystreak, .(Year), summarize, LongStreaks = sum(NGames>4))
