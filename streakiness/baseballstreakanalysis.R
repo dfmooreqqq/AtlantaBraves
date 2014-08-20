@@ -72,6 +72,7 @@ histogram( ~ summarybystreak$NGames | summarybystreak$Year*summarybystreak$Winor
 Wquantiles<-quantile(summarybystreak$NGames[summarybystreak$WinorLoss=="W"])
 Lquantiles<-quantile(summarybystreak$NGames[summarybystreak$WinorLoss=="L"])
 xyplot(NGames ~ StreakNo, data=summarybystreak, groups=WinorLoss)
-NumLongStreaksWL<-ddply(summarybystreak, .(Year, WinorLoss), summarize, LongStreaks = sum(NGames>4))
-NumLongStreaks<-ddply(summarybystreak, .(Year), summarize, LongStreaks = sum(NGames>4))
+StreakLength<-4
+NumLongStreaksWL<-ddply(summarybystreak, .(Year, WinorLoss), summarize, LongStreaks = sum(NGames>StreakLength), LongStreakPerc = sum(NGames[NGames>StreakLength])/162)
+NumLongStreaks<-ddply(summarybystreak, .(Year), summarize, LongStreaks = sum(NGames>StreakLength), LongStreakPerc = sum(NGames[NGames>StreakLength])/162)
 xyplot(LongStreaks~Year, data = NumLongStreaks)
