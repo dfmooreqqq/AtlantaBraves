@@ -1,4 +1,4 @@
-yearlist<-c(1974:2013)
+yearlist<-c(1975:1980, 1982:1988, 1990:2001, 2003:2013) #I don't want to debug these years right now
 
 fullteamschedule<-data.frame(X.2=as.integer(character()),
                              Rk=as.integer(character()),
@@ -50,7 +50,7 @@ for(i in 1:length(yearlist)){
 ## First - define new streak if Loss changes to Win or vice versa
 fullteamschedule<-fullteamschedule[!is.na(fullteamschedule$WinorLoss),]
 #for now, let's get rid of 2002 (giving me trouble)
-fullteamschedule<-fullteamschedule[fullteamschedule$Year!=2002,]
+#fullteamschedule<-fullteamschedule[fullteamschedule$Year!=2002,]
 fullteamschedule$StreakNo[1]<-1
 fullteamschedule$Count <- 1
 for(i in 2:length(fullteamschedule$WinorLoss)){
@@ -68,6 +68,7 @@ for(i in 2:length(fullteamschedule$WinorLoss)){
 
 library(plyr)
 summarybystreak <- ddply(fullteamschedule, .(StreakNo, WinorLoss, Year), summarize, NGames=sum(Count))
+quantilesbyyear <- ddply(summarybystreak, .(Year), summarize, Quantiles=list(quantile(NGames, probs=c(0,0.05, 0.25, 0.5, 0.75, 0.95,1))))
 histogram( ~ summarybystreak$NGames | summarybystreak$Year*summarybystreak$WinorLoss, nint=max(summarybystreak$NGames, na.rm=TRUE))
 Wquantiles<-quantile(summarybystreak$NGames[summarybystreak$WinorLoss=="W"])
 Lquantiles<-quantile(summarybystreak$NGames[summarybystreak$WinorLoss=="L"])
