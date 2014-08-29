@@ -69,6 +69,14 @@ for(i in 2:length(fullteamschedule$WinorLoss)){
 library(plyr)
 summarybystreak <- ddply(fullteamschedule, .(StreakNo, WinorLoss, Year), summarize, NGames=sum(Count))
 quantilesbyyear <- ddply(summarybystreak, .(Year), summarize, Quantiles=list(quantile(NGames, probs=c(0,0.05, 0.25, 0.5, 0.75, 0.95,1))))
+a<-t(as.data.frame(quantilesbyyear[,2]))
+row.names(a)<-quantilesbyyear$Year
+quantilesbyyear<-as.data.frame(a)
+quantilesbyyear$Year<-row.names(quantilesbyyear)
+histogram(quantilesbyyear$"95%")
+barplot(quantilesbyyear$"95%", names.arg=quantilesbyyear$Year)
+
+
 histogram( ~ summarybystreak$NGames | summarybystreak$Year*summarybystreak$WinorLoss, nint=max(summarybystreak$NGames, na.rm=TRUE))
 Wquantiles<-quantile(summarybystreak$NGames[summarybystreak$WinorLoss=="W"])
 Lquantiles<-quantile(summarybystreak$NGames[summarybystreak$WinorLoss=="L"])
