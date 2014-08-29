@@ -1,4 +1,4 @@
-yearlist<-c(1990:2013)
+yearlist<-c(1974:2013)
 
 fullteamschedule<-data.frame(X.2=as.integer(character()),
                              Rk=as.integer(character()),
