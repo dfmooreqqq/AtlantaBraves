@@ -27,30 +27,26 @@ shinyServer(function(input, output) {
         as.character(yearnotes$Notes[yearnotes$Year==as.numeric(input$Season)])
     })
     
-    # Generate Histogram Plot as well as amount over .500 plot
+    # Generate histogram plot as well as amount over .500 plot
     output$WLHistogram <- renderPlot({
-                                    qplot(WinorLoss, data=fullteamschedule[fullteamschedule$Year==as.numeric(input$Season),], , xlab="Win or Loss", ylab="Total Number")
+                                    qplot(WinorLoss, data=fullteamschedule[fullteamschedule$Year==as.numeric(input$Season),], , xlab="Win or Loss", ylab="Total Number", fill=WinorLoss)
                                       })
     
     output$Over500Plot <- renderPlot({
                                     qplot(GameNo, Over500, data=fullteamschedule[fullteamschedule$Year==as.numeric(input$Season),], , xlab="Game of Season", ylab="Number of games above or below .500", color=StreakNo) + geom_hline(aes(yintercept=0), colour="#990000", linetype="dashed")
                                     })
     
-    output$mytable = renderDataTable({
+    output$mytable <- renderDataTable({
         fullteamschedule[fullteamschedule$Year==as.numeric(input$Season),]
     })
     
-    
-    #output$Wquantiles<-renderDataTable({
-    #                                    quantile(summarybystreak$NGames[(summarybystreak$WinorLoss=="W") & (summarybystreak$Year==as.numeric(input$Season))])
-    #})
-    #output$Lquantiles<-renderDataTable({
-    #                                    quantile(summarybystreak$NGames[(summarybystreak$WinorLoss=="L") & (summarybystreak$Year==as.numeric(input$Season))])
-    #})
-    output$xyplot<-renderPlot({
-                            xyplot(NGames ~ StreakNo, data=summarybystreak[summarybystreak$Year==as.numeric(input$Season)], groups=WinorLoss)
+    output$streakxyplot <- renderPlot({
+                            qplot(StreakNo, NGames, data=summarybystreak[summarybystreak$Year==as.numeric(input$Season),], geom="point")
     })
-    
+
+    output$streakhist <- renderPlot({
+        qplot(NGames, data=summarybystreak[summarybystreak$Year==as.numeric(input$Season),])+geom_histogram(binwidth=1, aes(fill = ..count..))
+    })    
     
     
     

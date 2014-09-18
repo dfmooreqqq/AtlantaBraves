@@ -4,7 +4,7 @@ library(shiny)
 shinyUI(pageWithSidebar(
     
     # Application title
-    headerPanel("Atlanta Braves - Season Explorer"),
+    headerPanel("Atlanta Braves Season Explorer"),
     
     sidebarPanel(
         selectInput("Season", "Season:",
@@ -49,7 +49,15 @@ shinyUI(pageWithSidebar(
                     ),
         h4("How to Use This Page"),
         p("Please select a year from 1975 - 2013 from the selection above."),
-        p("The charts to the right will update with the Win/Loss numbers for that season, as well as the trend throughout the season (given in number of games over .500)")
+        p("The charts to the right will update with the Win/Loss numbers for that season, as well as the trend throughout the season (given in number of games over .500)"),
+        p("The third chart on the right shows, in the y-axis, the number of games within a streak (which is numbered on the x-axis). A streak is defined as any stretch of games that are either all wins or all losses. For example, 2 wins in a row and then a loss and then another win would define a streak of 2 wins, a streak of 1 loss, and a streak of 1 win."),
+        p("The fourth chart shows the distribution of the streak lengths throughout the season."),
+        p("Source of data: MLB"),
+        a("Data file", href=""),
+        p(),
+        hr(),
+        p("Daniel Moore"),
+        a("Email", href="mailto:dfmjunk-at-notreal.com")
         
         ),
     
@@ -60,13 +68,15 @@ shinyUI(pageWithSidebar(
         
         plotOutput("WLHistogram"),
         
-        plotOutput("Over500Plot")
+        plotOutput("Over500Plot"),
         
         #dataTableOutput('Wquantiles'),
         
         #dataTableOutput('Lquantiles'),
         
-        #plotOutput("xyplot")
+        plotOutput("streakxyplot"),
+        
+        plotOutput("streakhist")
         
         )
 ))
