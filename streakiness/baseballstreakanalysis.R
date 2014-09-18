@@ -54,6 +54,7 @@ fullteamschedule<-fullteamschedule[!is.na(fullteamschedule$WinorLoss),]
 #for now, let's get rid of 2002 (giving me trouble)
 fullteamschedule<-fullteamschedule[fullteamschedule$Year!=2002,]
 fullteamschedule$StreakNo[1]<-1
+fullteamschedule$Over500[1]<- -1
 fullteamschedule$Count <- 1
 for(i in 2:length(fullteamschedule$WinorLoss)){
     if(fullteamschedule$WinorLoss[i]==fullteamschedule$WinorLoss[i-1]){
@@ -62,11 +63,26 @@ for(i in 2:length(fullteamschedule$WinorLoss)){
     else {
         fullteamschedule$StreakNo[i]<-fullteamschedule$StreakNo[i-1]+1
     }
+    if(fullteamschedule$WinorLoss[i]=="W"){
+        fullteamschedule$Over500[i]<-fullteamschedule$Over500[i-1]+1
+    }
+    else {
+        fullteamschedule$Over500[i]<-fullteamschedule$Over500[i-1]-1
+    }
     if(fullteamschedule$Year[i]!=fullteamschedule$Year[i-1]){
         fullteamschedule$StreakNo[i]<-1
+        if(fullteamschedule$WinorLoss[i]=="W"){
+            fullteamschedule$Over500[i]<- 1
+        }
+        else {
+            fullteamschedule$Over500[i]<- -1
+        }
     }
-    
 }
+
+
+
+
 
 
 summarybystreak <- ddply(fullteamschedule, .(StreakNo, WinorLoss, Year), summarize, NGames=sum(Count))
