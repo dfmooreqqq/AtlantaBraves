@@ -1,3 +1,5 @@
+setwd("C:\\Users\\Daniel\\Documents\\GitHub\\AtlantaBraves\\streakiness")
+library(plyr); library(lattice); library(data.table); library(ggplot2)
 yearlist<-c(1990:2013)
 
 fullteamschedule<-data.frame(X.2=as.integer(character()),
@@ -66,7 +68,7 @@ for(i in 2:length(fullteamschedule$WinorLoss)){
     
 }
 
-library(plyr)
+
 summarybystreak <- ddply(fullteamschedule, .(StreakNo, WinorLoss, Year), summarize, NGames=sum(Count))
 histogram( ~ summarybystreak$NGames | summarybystreak$Year*summarybystreak$WinorLoss, nint=max(summarybystreak$NGames, na.rm=TRUE))
 Wquantiles<-quantile(summarybystreak$NGames[summarybystreak$WinorLoss=="W"])
