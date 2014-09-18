@@ -94,3 +94,6 @@ StreakLength<-4
 NumLongStreaksWL<-ddply(summarybystreak, .(Year, WinorLoss), summarize, LongStreaks = sum(NGames>StreakLength), LongStreakPerc = sum(NGames[NGames>StreakLength])/162)
 NumLongStreaks<-ddply(summarybystreak, .(Year), summarize, LongStreaks = sum(NGames>StreakLength), LongStreakPerc = sum(NGames[NGames>StreakLength])/162)
 xyplot(LongStreaks~Year, data = NumLongStreaks)
+
+xyplot(Over500~as.numeric(Gm.)|Year, data=fullteamschedule[fullteamschedule$Year=="1993",])
+qplot(fullteamschedule[fullteamschedule$Year=="1993",]$WinorLoss)
