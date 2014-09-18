@@ -47,12 +47,26 @@ shinyUI(pageWithSidebar(
                         "2013" = "2013"
                          )
                     ),
-        
-        checkboxInput("outliers", "Show outliers", FALSE)
-        
-        
+        h4("How to Use This Page"),
+        p("Please select a year from 1975 - 2013 from the selection above."),
+        p("The charts to the right will update with the Win/Loss numbers for that season, as well as the trend throughout the season (given in number of games over .500)")
         
         ),
     
-    mainPanel()
+    mainPanel(
+        h3(textOutput("Season")),
+        
+        p(textOutput("NoteOnSeason")),
+        
+        plotOutput("WLHistogram"),
+        
+        plotOutput("Over500Plot")
+        
+        #dataTableOutput('Wquantiles'),
+        
+        #dataTableOutput('Lquantiles'),
+        
+        #plotOutput("xyplot")
+        
+        )
 ))

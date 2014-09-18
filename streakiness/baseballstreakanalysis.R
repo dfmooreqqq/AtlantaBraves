@@ -1,6 +1,6 @@
-setwd("C:\\Users\\Daniel\\Documents\\GitHub\\AtlantaBraves\\streakiness")
+setwd("C:\\Users\\damoore\\Documents\\GitHub\\AtlantaBraves\\streakiness")
 library(plyr); library(lattice); library(data.table); library(ggplot2)
-yearlist<-c(1975:1980, 1982:1988, 1990:2013)
+yearlist<-c(1975:1980, 1982:1988, 1990:2001, 2003:2013)
 
 fullteamschedule<-data.frame(X.2=as.integer(character()),
                              Rk=as.integer(character()),
@@ -86,7 +86,7 @@ for(i in 2:length(fullteamschedule$WinorLoss)){
 
 
 summarybystreak <- ddply(fullteamschedule, .(StreakNo, WinorLoss, Year), summarize, NGames=sum(Count))
-histogram( ~ summarybystreak$NGames | summarybystreak$Year*summarybystreak$WinorLoss, nint=max(summarybystreak$NGames, na.rm=TRUE))
+#histogram( ~ summarybystreak$NGames | summarybystreak$Year*summarybystreak$WinorLoss, nint=max(summarybystreak$NGames, na.rm=TRUE))
 Wquantiles<-quantile(summarybystreak$NGames[summarybystreak$WinorLoss=="W"])
 Lquantiles<-quantile(summarybystreak$NGames[summarybystreak$WinorLoss=="L"])
 xyplot(NGames ~ StreakNo, data=summarybystreak, groups=WinorLoss)
@@ -96,4 +96,8 @@ NumLongStreaks<-ddply(summarybystreak, .(Year), summarize, LongStreaks = sum(NGa
 xyplot(LongStreaks~Year, data = NumLongStreaks)
 
 xyplot(Over500~as.numeric(Gm.)|Year, data=fullteamschedule[fullteamschedule$Year=="1993",])
-qplot(fullteamschedule[fullteamschedule$Year=="1993",]$WinorLoss)
+qplot(fullteamschedule[fullteamschedule$Year=="1993",]$WinorLoss, xlab="Win or Loss", ylab="Total Number")
+qplot(as.numeric(Gm.), Over500, data=fullteamschedule[fullteamschedule$Year=="1993",], xlab="Game of Season", ylab="Number of games above or below .500", color=StreakNo) + geom_hline(aes(yintercept=0), colour="#990000", linetype="dashed")
+
+
+write.csv(fullteamschedule, "fullteamschedule.csv")
