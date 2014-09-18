@@ -1,6 +1,6 @@
 setwd("C:\\Users\\Daniel\\Documents\\GitHub\\AtlantaBraves\\streakiness")
 library(plyr); library(lattice); library(data.table); library(ggplot2)
-yearlist<-c(1990:2013)
+yearlist<-c(1975:1980, 1982:1988, 1990:2013)
 
 fullteamschedule<-data.frame(X.2=as.integer(character()),
                              Rk=as.integer(character()),
