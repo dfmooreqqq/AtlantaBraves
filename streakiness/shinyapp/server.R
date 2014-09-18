@@ -2,11 +2,12 @@ library(shiny); library(ggplot2); library(lattice);
 
 # Let's load the full season csv from the github depository
 ### Need to find a host for the data
-fullteamschedule<-read.csv("C:\\Users\\damoore\\Documents\\GitHub\\AtlantaBraves\\streakiness\\fullteamschedule.csv")
+#fullteamschedule<-read.csv("C:\\Users\\damoore\\Documents\\GitHub\\AtlantaBraves\\streakiness\\fullteamschedule.csv")
+fullteamschedule<-read.csv("http://www.danielfmoore.com/stats/fullteamschedule.csv")
 fullteamschedule$GameNo<-as.numeric(as.character(fullteamschedule$Gm.))
 
-yearnotes<-read.csv("C:\\Users\\damoore\\Documents\\GitHub\\AtlantaBraves\\streakiness\\yearnotes.csv")
-
+#yearnotes<-read.csv("C:\\Users\\damoore\\Documents\\GitHub\\AtlantaBraves\\streakiness\\yearnotes.csv")
+yearnotes<-read.csv("http://www.danielfmoore.com/stats/yearnotes.csv")
 
 summarybystreak <- ddply(fullteamschedule, .(StreakNo, WinorLoss, Year), summarize, NGames=sum(Count))
 

@@ -7,6 +7,8 @@ shinyUI(pageWithSidebar(
     headerPanel("Atlanta Braves Season Explorer"),
     
     sidebarPanel(
+        p("Please be patient while the data loads..."),
+        
         selectInput("Season", "Season:",
                     list(
                         "1975" = "1975",
@@ -53,7 +55,7 @@ shinyUI(pageWithSidebar(
         p("The third chart on the right shows, in the y-axis, the number of games within a streak (which is numbered on the x-axis). A streak is defined as any stretch of games that are either all wins or all losses. For example, 2 wins in a row and then a loss and then another win would define a streak of 2 wins, a streak of 1 loss, and a streak of 1 win."),
         p("The fourth chart shows the distribution of the streak lengths throughout the season."),
         p("Source of data: MLB"),
-        a("Data file", href=""),
+        a("Data file", href="http://www.danielfmoore.com/stats/fullteamschedule.csv"),
         p(),
         hr(),
         p("Daniel Moore"),
