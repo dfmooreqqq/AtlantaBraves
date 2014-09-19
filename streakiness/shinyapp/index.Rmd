@@ -14,12 +14,13 @@ knit        : slidify::knit2slides
 ```{r to load data and prepare environment, echo=FALSE}
 
 library(ggplot2); library(plyr);library(data.table);
+options(warn=-1)
 
 # Let's load the full season csv from the github depository
 ### Need to find a host for the data
 fullteamschedule<-read.csv("http://www.danielfmoore.com/stats/fullteamschedule.csv")
 #fullteamschedule<-read.csv("http://github.com/dfmooreqqq/AtlantaBraves/raw/master/streakiness/fullteamschedule.csv")
-fullteamschedule$GameNo<-as.numeric(as.character(fullteamschedule$Gm.))
+suppressWarnings(fullteamschedule$GameNo<-as.numeric(as.character(fullteamschedule$Gm.)))
 
 #yearnotes<-read.csv("C:\\Users\\damoore\\Documents\\GitHub\\AtlantaBraves\\streakiness\\yearnotes.csv")
 #yearnotes<-read.csv("http://github.com/dfmooreqqq/AtlantaBraves/raw/master/streakiness/yearnotes.csv")
@@ -79,7 +80,8 @@ The baseball season is a long season (162 games!). One way to envision the story
 
 
 ```{r, echo=FALSE, fig.height=3}
-qplot(GameNo, Over500, data=fullteamschedule[fullteamschedule$Year==currentSeason,], , xlab="Game of Season", ylab="Number of games above or below .500", color=StreakNo) + geom_hline(aes(yintercept=0), colour="#990000", linetype="dashed")
+
+suppressWarnings(qplot(GameNo, Over500, data=fullteamschedule[fullteamschedule$Year==currentSeason,], , xlab="Game of Season", ylab="Number of games above or below .500", color=StreakNo) + geom_hline(aes(yintercept=0), colour="#990000", linetype="dashed"))
 ```
 
 
@@ -94,7 +96,7 @@ Some years, teams are streakier than other years, they tend to have long stretch
 library(grid)
 suppressMessages(source('multiplot.R'))
 g1<-qplot(StreakNo, NGames, data=summarybystreak[summarybystreak$Year==currentSeason,], geom="point")
-g2<-qplot(NGames, data=summarybystreak[summarybystreak$Year==currentSeason & summarybystreak$NGames>1,])+geom_histogram(binwidth=1, aes(fill = ..count..))
+g2<-ggplot(data = summarybystreak[summarybystreak$Year==currentSeason & summarybystreak$NGames>1,], aes(x=NGames)) + geom_histogram(binwidth=1, aes(fill = ..count..))
 
 multiplot(g1,g2, cols=2)
 

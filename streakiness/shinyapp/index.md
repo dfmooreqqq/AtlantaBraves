@@ -12,9 +12,6 @@ knit        : slidify::knit2slides
 ---
 
 
-```
-## Warning: NAs introduced by coercion
-```
 
 
 
@@ -60,11 +57,6 @@ A good season, of course, consists of vastly more wins than losses :)
 The baseball season is a long season (162 games!). One way to envision the story of that season is to look at the number of games that the team is above .500 as the season progresses. It's a good way to see the ups and downs of the season, when the team surged and when it slipped, and how consistent the team was throughout the year.
 
 
-
-```
-## Warning: Removed 9 rows containing missing values (geom_point).
-```
-
 ![plot of chunk unnamed-chunk-2](assets/fig/unnamed-chunk-2.png) 
 
 
@@ -74,11 +66,6 @@ The baseball season is a long season (162 games!). One way to envision the story
 # Streak Analyzers
 
 Some years, teams are streakier than other years, they tend to have long stretches of winning and losing as opposed to more consistency. One way to see how *streaky* a team is during a season is to look at the length of streaks throughout the season, both as the season progresses, as in the first chart and as a distribution, as in the second chart. These charts give a quick overview of this (removing the most common case of streaks of length 1).
-
-
-```
-## stat_bin: binwidth defaulted to range/30. Use 'binwidth = x' to adjust this.
-```
 
 ![plot of chunk unnamed-chunk-3](assets/fig/unnamed-chunk-3.png) 
 
