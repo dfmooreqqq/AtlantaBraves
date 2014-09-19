@@ -1,4 +1,4 @@
-setwd("C:\\Users\\damoore\\Documents\\GitHub\\AtlantaBraves\\streakiness")
+setwd("C:\\Users\\Daniel\\Documents\\GitHub\\AtlantaBraves\\streakiness")
 library(plyr); library(lattice); library(data.table); library(ggplot2)
 yearlist<-c(1975:1980, 1982:1988, 1990:2001, 2003:2013)
 
@@ -101,3 +101,6 @@ qplot(as.numeric(Gm.), Over500, data=fullteamschedule[fullteamschedule$Year=="19
 
 
 write.csv(fullteamschedule, "fullteamschedule.csv")
+
+library(sm)
+sm.density.compare(NGames, Year, data=summarybystreak)
