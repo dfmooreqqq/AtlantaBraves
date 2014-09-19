@@ -1,4 +1,12 @@
 base
+bitops
 data.table
+devtools
 ggplot2
+knitr
+lattice
+markdown
 plyr
+RCurl
+slidify
+sm

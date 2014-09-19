@@ -77,7 +77,6 @@ Some years, teams are streakier than other years, they tend to have long stretch
 
 
 ```
-## Loading required package: grid
 ## stat_bin: binwidth defaulted to range/30. Use 'binwidth = x' to adjust this.
 ```
 

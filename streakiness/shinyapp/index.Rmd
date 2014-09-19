@@ -91,6 +91,7 @@ qplot(GameNo, Over500, data=fullteamschedule[fullteamschedule$Year==currentSeaso
 Some years, teams are streakier than other years, they tend to have long stretches of winning and losing as opposed to more consistency. One way to see how *streaky* a team is during a season is to look at the length of streaks throughout the season, both as the season progresses, as in the first chart and as a distribution, as in the second chart. These charts give a quick overview of this (removing the most common case of streaks of length 1).
 
 ```{r, echo=FALSE, fig.height=3, fig.width=10}
+library(grid)
 suppressMessages(source('multiplot.R'))
 g1<-qplot(StreakNo, NGames, data=summarybystreak[summarybystreak$Year==currentSeason,], geom="point")
 g2<-qplot(NGames, data=summarybystreak[summarybystreak$Year==currentSeason & summarybystreak$NGames>1,])+geom_histogram(binwidth=1, aes(fill = ..count..))
