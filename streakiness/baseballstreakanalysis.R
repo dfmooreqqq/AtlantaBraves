@@ -104,3 +104,12 @@ write.csv(fullteamschedule, "fullteamschedule.csv")
 
 library(sm)
 sm.density.compare(NGames, Year, data=summarybystreak)
+
+
+### time series fitting - see here - https://www.otexts.org/fpp/8/7
+install.packages("forecast")
+library("forecast", lib.loc="~/R/win-library/3.1")
+a<-fullteamschedule[fullteamschedule$Year=="1993",]$Over500
+fit<-auto.arima(a)
+summary(fit)
+plot(forecast(fit))
