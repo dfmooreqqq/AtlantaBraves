@@ -109,7 +109,29 @@ sm.density.compare(NGames, Year, data=summarybystreak)
 
 ### time series fitting - see here - https://www.otexts.org/fpp/8/7
 library("forecast", lib.loc="~/R/win-library/3.1")
-a<-fullteamschedule[fullteamschedule$Year=="1993",]$Over500
+a<-fullteamschedule[fullteamschedule$Year=="2013",]$Over500
 fit<-auto.arima(a)
 summary(fit)
 plot(forecast(fit))
+
+
+testa<-a[1:81]
+validatea<-a[82:length(a)]
+fit1<-auto.arima(testa)
+predictmore<-predict(fit1, n.ahead=validatea, newxreg=82:(length(a)))
+predictmore<-as.data.frame(predictmore)
+predictmore$upper95<-predictmore$pred + 1.96 * predictmore$se
+predictmore$lower95<-predictmore$pred - 1.96 * predictmore$se
+
+predictmore$upper68<-predictmore$pred + 1 * predictmore$se
+predictmore$lower68<-predictmore$pred - 1 * predictmore$se
+
+
+plot(forecast(fit1, h=length(validatea)))
+lines(82:length(a),validatea, col="red")
+lines(82:length(a),predictmore$upper95, col="green")
+lines(82:length(a),predictmore$lower95, col="green")
+
+lines(82:length(a),predictmore$upper68, col="blue")
+lines(82:length(a),predictmore$lower68, col="blue")
+
