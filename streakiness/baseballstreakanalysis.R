@@ -1,3 +1,4 @@
+setwd("C:\\Users\\damoore\\Documents\\GitHub\\AtlantaBraves\\streakiness")
 setwd("C:\\Users\\Daniel\\Documents\\GitHub\\AtlantaBraves\\streakiness")
 library(plyr); library(lattice); library(data.table); library(ggplot2)
 yearlist<-c(1975:1980, 1982:1988, 1990:2001, 2003:2013)
@@ -107,7 +108,6 @@ sm.density.compare(NGames, Year, data=summarybystreak)
 
 
 ### time series fitting - see here - https://www.otexts.org/fpp/8/7
-install.packages("forecast")
 library("forecast", lib.loc="~/R/win-library/3.1")
 a<-fullteamschedule[fullteamschedule$Year=="1993",]$Over500
 fit<-auto.arima(a)
