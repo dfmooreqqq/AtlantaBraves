@@ -1,6 +1,15 @@
-setwd("C:\\Users\\damoore\\Documents\\GitHub\\AtlantaBraves\\streakiness")
-setwd("C:\\Users\\Daniel\\Documents\\GitHub\\AtlantaBraves\\streakiness")
-library(plyr); library(lattice); library(data.table); library(ggplot2)
+# Set working directory
+workingdir<-paste("C:\\Users", Sys.getenv("USERNAME"), "Documents\\GitHub\\YACensusData", sep = "\\")
+setwd(workingdir)
+# Load packages.
+packages <- c("plyr", "lattice", "data.table", "ggplot2")
+packages <- lapply(packages, FUN = function(x) {
+    if (!require(x, character.only = TRUE)) {
+        install.packages(x)
+        library(x, character.only = TRUE)
+    }
+})
+
 yearlist<-c(1975:1980, 1982:1988, 1990:2001, 2003:2014)
 
 fullteamschedule<-data.frame(X.2=as.integer(character()),
