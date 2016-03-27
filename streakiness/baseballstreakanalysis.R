@@ -1,8 +1,8 @@
 # Set working directory
-workingdir<-paste("C:\\Users", Sys.getenv("USERNAME"), "Documents\\GitHub\\YACensusData", sep = "\\")
+workingdir<-paste("C:\\Users", Sys.getenv("USERNAME"), "Documents\\GitHub\\AtlantaBraves\\streakiness", sep = "\\")
 setwd(workingdir)
 # Load packages.
-packages <- c("plyr", "lattice", "data.table", "ggplot2")
+packages <- c("plyr", "lattice", "data.table", "ggplot2", "sm", "forecast")
 packages <- lapply(packages, FUN = function(x) {
     if (!require(x, character.only = TRUE)) {
         install.packages(x)
