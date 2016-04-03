@@ -10,7 +10,7 @@ packages <- lapply(packages, FUN = function(x) {
     }
 })
 
-yearlist<-c(1975:1980, 1982:1988, 1990:2001, 2003:2014)
+yearlist<-c(1975:1980, 1982:1988, 1990:2001, 2003:2015)
 
 fullteamschedule<-data.frame(X.2=as.integer(character()),
                              Rk=as.integer(character()),
@@ -105,9 +105,9 @@ NumLongStreaksWL<-ddply(summarybystreak, .(Year, WinorLoss), summarize, LongStre
 NumLongStreaks<-ddply(summarybystreak, .(Year), summarize, LongStreaks = sum(NGames>StreakLength), LongStreakPerc = sum(NGames[NGames>StreakLength])/162)
 xyplot(LongStreaks~Year, data = NumLongStreaks)
 
-xyplot(Over500~as.numeric(Gm.)|Year, data=fullteamschedule[fullteamschedule$Year=="1993",])
+xyplot(Over500~as.numeric(Gm.)|Year, data=fullteamschedule[fullteamschedule$Year=="2015",])
 qplot(fullteamschedule[fullteamschedule$Year=="1993",]$WinorLoss, xlab="Win or Loss", ylab="Total Number")
-qplot(as.numeric(Gm.), Over500, data=fullteamschedule[fullteamschedule$Year=="1993",], xlab="Game of Season", ylab="Number of games above or below .500", color=StreakNo) + geom_hline(aes(yintercept=0), colour="#990000", linetype="dashed")
+qplot(as.numeric(Gm.), Over500, data=fullteamschedule[fullteamschedule$Year=="2015",], xlab="Game of Season", ylab="Number of games above or below .500", color=StreakNo) + geom_hline(aes(yintercept=0), colour="#990000", linetype="dashed")
 
 
 write.csv(fullteamschedule, "fullteamschedule.csv")
@@ -118,7 +118,7 @@ sm.density.compare(NGames, Year, data=summarybystreak)
 
 ### time series fitting - see here - https://www.otexts.org/fpp/8/7
 library("forecast", lib.loc="~/R/win-library/3.1")
-a<-fullteamschedule[fullteamschedule$Year=="2014",]$Over500
+a<-fullteamschedule[fullteamschedule$Year=="2015",]$Over500
 fit<-auto.arima(a)
 summary(fit)
 plot(forecast(fit))

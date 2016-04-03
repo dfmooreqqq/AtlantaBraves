@@ -47,11 +47,12 @@ shinyUI(pageWithSidebar(
                         "2011" = "2011",
                         "2012" = "2012",
                         "2013" = "2013",
-                        "2014" = "2014"
+                        "2014" = "2014",
+                        "2015" = "2015"
                          )
                     ),
         h4("How to Use This Page"),
-        p("Please select a year from 1975 - 2013 from the selection above."),
+        p("Please select a year from 1975 - 2015 from the selection above."),
         p("The charts to the right will update with the Win/Loss numbers for that season, as well as the trend throughout the season (given in number of games over .500)"),
         p("The third chart on the right shows, in the y-axis, the number of games within a streak (which is numbered on the x-axis). A streak is defined as any stretch of games that are either all wins or all losses. For example, 2 wins in a row and then a loss and then another win would define a streak of 2 wins, a streak of 1 loss, and a streak of 1 win."),
         p("The fourth chart shows the distribution of the streak lengths throughout the season."),
